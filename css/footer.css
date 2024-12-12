@@ -1,0 +1,217 @@
+.container_footer {
+    background-color: #2D2D2D;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.inicio_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastrar_categorias {
+    background-color: #EAE8E4;
+    width: 75%;
+    padding: 2rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    && > div {
+        color: #2D2D2D;
+        margin-bottom: 2rem;
+        && > p {
+            margin-top: 1rem;
+            font-size: 20px;
+            font-weight: 300;
+            padding-bottom: 1rem;
+        }
+        && > h2 {
+            font-weight: 500;
+            font-size: 28px;
+        }
+    }
+}
+
+.input_categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    && > input {
+        padding: 1rem;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 300;
+    }
+}
+
+.verificacao_seguranca {
+    && > h3 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+.container_verificacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    && > input {
+        padding: .5rem;
+        font-size: 18px;
+        font-weight: 300;
+        border: none;
+        border-radius: 10px;
+        width: 30%;
+    }
+    && > div {
+        color: #7D26C9;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: #DFDCD5;
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+}
+
+#botao_verificacao {
+    background-color: #DFBBFE;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    font-size: 18px;
+    font-weight: 500;
+    font-weight: bold;
+    color: #2D2D2D;
+    opacity: .5;
+}
+
+.linha_footer {
+    height: .1px;
+    width: 80%;
+    background-color: #DFBBFE;
+    margin: 4rem 0 2rem 0;
+}
+
+.icones_footer {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.infos_final_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: #EAE8E4;
+    && > h3 {
+        font-weight: 500;
+        font-size: 24px;
+    }
+    && > div {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        && > span {
+            font-weight: 300;
+            font-size: 18px;
+        }
+    }
+}
+
+#mensagem_verificacao {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 20px;
+    color: gray;
+}
+
+@media screen and (min-width: 768px) {
+    .inicio_footer {
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .cadastrar_categorias {
+        width: 60%;
+        align-items: start;
+        padding: 2rem 0 2rem 2rem;
+        && > div {
+            && > h2 {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .input_categorias {
+        flex-direction: row;
+        flex-wrap: wrap;
+        && > input {
+            width: 43%;
+            font-size: 20px;
+            padding: .7rem;
+        }
+    }
+
+    #botao_verificacao {
+        margin: auto;
+        transition: .2s ease-in-out;
+        &&:hover {
+            opacity: 1;
+            color: #7D2D2D;
+            background-color: #00BBFE;
+            cursor: pointer;
+        }
+    }
+
+    .verificacao_seguranca {
+        display: flex;
+        align-items: center;
+        && > h3 {
+            font-size: 22px;
+            padding-right: 1rem;
+        }
+    }
+
+    .container_verificacao {
+        margin: 0;
+        gap: 2rem;
+        && > div {
+            padding: .5rem 2rem;
+            font-size: 22px;
+        }
+        && > input {
+            width: 40%;
+            font-size: 20px;
+        }
+    }
+
+    .linha_footer {
+        width: 90%;
+    }
+
+    .infos_final_footer {
+        gap: 1rem;
+        && > h3 {
+            font-size: 20px;
+        }
+    }
+
+    #mensagem_verificacao {
+        margin: auto;
+    }
+}
