@@ -90,6 +90,49 @@
 
 @media screen and (min-width: 768px) {
 
+    .banner_inicial {
+        overflow: hidden;
+    }
+
+    #banner_monks_logo {
+        width: 40%;
+    }
+
+    .texto_banner_inicial {
+        padding-top: 5rem;
+        && > h1 {
+            font-size: 30px;
+        }
+        && > img {
+            width: 15%;
+        }
+    }
+
+    #menu_hamburguer {
+        display: none;
+    }
+
+    .nav_inicial {
+        && > a {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .nav_categorias {
+        display: flex;
+        gap: 1rem;
+        && > a {
+            text-decoration: none;
+            color: #EAE8E4;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
     body {
         background-color: #EAE8E4;
     }
@@ -99,14 +142,9 @@
     }
 
     .nav_categorias {
-        display: flex;
-        gap: 3rem;
-        padding-left: 2rem;
+        padding-left: 1rem;
         && > a {
-            text-decoration: none;
-            color: #EAE8E4;
             font-size: 20px;
-            font-weight: 300;
             transition: .4s ease-in-out;
             background-image: linear-gradient(90deg, #6D2D2D, blue);
             background-repeat: no-repeat;
@@ -131,26 +169,29 @@
     }
 
     #banner_monks_logo {
-        display: none;
+        display: inline-block;
     }
 
     #banner_monks_logo_2 {
-        display: inline-block;
+        display: none;
         position: absolute;
         z-index: 2;
-        right: 2rem;
+        right: 0;
+        width: 40%;
     }
 
     .banner_inicial {
         background-color: #2D2D2D;
         position: relative;
-        height: 73.2vh;
+        height: fit-content;
+        min-height: 50vh;
         border-radius: 0 0 25px 25px;
+        overflow: hidden;
     }
 
     .texto_banner_inicial {
         width: 50%;
-        padding: 6rem 5rem 0 5rem;
+        padding: 6rem 5rem 1rem 5rem;
         flex-direction: column;
         && > h1 {
             font-size: 45px;
@@ -163,5 +204,24 @@
             width: 10%;
             padding-top: 1rem;
         }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    #banner_monks_logo {
+        display: none;
+    }
+
+    #banner_monks_logo_2 {
+        display: inline-block;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        width: 40%;
+    }
+
+    .nav_categorias {
+        gap: 3rem;
+        padding-left: 2rem;
     }
 }

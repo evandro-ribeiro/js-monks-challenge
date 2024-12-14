@@ -140,16 +140,23 @@
 }
 
 @media screen and (min-width: 768px) {
+    .verificacao_seguranca {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .inicio_footer {
         flex-direction: row;
         gap: 3rem;
         justify-content: center;
+        margin: 0 2rem;
     }
 
     .cadastrar_categorias {
         width: 60%;
         align-items: start;
-        padding: 2rem 0 2rem 2rem;
+        padding: 2rem 2rem 2rem 2rem;
         && > div {
             && > h2 {
                 font-size: 40px;
@@ -160,6 +167,7 @@
     .input_categorias {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         && > input {
             width: 43%;
             font-size: 20px;
@@ -181,15 +189,16 @@
     .verificacao_seguranca {
         display: flex;
         align-items: center;
+        width: 100%;
+        justify-content: space-around;
         && > h3 {
             font-size: 22px;
-            padding-right: 1rem;
         }
     }
 
     .container_verificacao {
         margin: 0;
-        gap: 2rem;
+        gap: 1.5rem;
         && > div {
             padding: .5rem 2rem;
             font-size: 22px;

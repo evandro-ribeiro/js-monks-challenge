@@ -177,24 +177,24 @@
 
     .cards {
         flex-direction: row;
-        gap: 1.5rem;
+        gap: 1rem;
         justify-content: center;
     }
 
     .card {
         width: 20%;
-        gap: 1rem;
-        padding: .4rem .4rem 1rem .4rem;
+        gap: .5rem;
+        padding: .4rem;
         && > div {
             padding: .2rem .5rem .5rem .5rem;
             && > p {
                 padding: 1rem 0 0 0;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 150%;
                 font-weight: 300;
             }
             && > h3 {
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 500;
             }
         }
@@ -207,34 +207,35 @@
     .imagens_cidades {
         display: flex;
         flex-direction: row;
-        padding: 4rem 5rem;
+        padding: 2rem 3rem;
         && > div {
             width: 100%;
+            justify-content: center;
         }
     }
 
     .titulo_cards_2 {
-        padding: 1rem 2rem 2rem 1rem;
+        padding: 1rem 2rem .5rem 1rem;
         && > h2 {
-            font-size: 40px;
+            font-size: 24px;
             font-weight: 700;
         }
         && > p {
-            font-size: 22px;
+            font-size: 16px;
             font-weight: 300;
         }
     }
 
     .apps_disponiveis {
         flex-direction: row;
-        padding: 3rem;
+        padding: 2rem;
         width: 80%;
         && > div {
             && > h2 {
-                font-size: 38px;
+                font-size: 26px;
             }
             && > p {
-                font-size: 24px;
+                font-size: 16px;
                 padding: 1rem 0 0 0;
             }
         }
@@ -269,6 +270,72 @@
     .card2 {
         && > div {
             && > h3 {
+                font-size: 22px;
+            }
+            && > p {
+                font-size: 16px;
+                line-height: 150%;
+            }
+        }
+        && > button {
+            padding: .7rem 2rem;
+            font-size: 16px;
+            transition: .2s ease-in-out;
+            &&:hover {
+                background-color: #FFDBFE;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cards {
+        gap: 1.5rem;
+    }
+
+    .card {
+        gap: 1rem;
+        padding: .4rem .4rem 1rem .4rem;
+        && > div {
+            && > p {
+                font-size: 18px;
+            }
+            && > h3 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .titulo_cards_2 {
+        padding: 1rem 2rem 2rem 1rem;
+        && > h2 {
+            font-size: 40px;
+        }
+        && > p {
+            font-size: 22px;
+        }
+    }
+
+    .imagens_cidades {
+        padding: 4rem 5rem;
+    }
+
+    .apps_disponiveis {
+        padding: 3rem;
+        && > div {
+            && > h2 {
+                font-size: 38px;
+            }
+            && > p {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .card2 {
+        && > div {
+            && > h3 {
                 font-size: 24px;
             }
             && > p {
@@ -277,6 +344,8 @@
             }
         }
         && > button {
+            padding: .7rem 2.5rem;
+            font-size: 18px;
             transition: .2s ease-in-out;
             &&:hover {
                 background-color: #FFDBFE;
